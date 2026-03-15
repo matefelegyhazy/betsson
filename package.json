@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "npx markmap-cli mindmap.md -o index.html"
+  }
+}
