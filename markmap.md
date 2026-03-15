@@ -3,129 +3,86 @@
 ## Culture and Career
 
 ### Engagement
-
 - **Quarterly Team Building**
-
   - Creative (Escape room, Guided painting)
   - Purpose (Facilitated Games, CSR / Volunteering)
-
 - **Watch Parties** (.NET Conf, MS Build, NDC)
 
 ### Growth
-
 - **Feedback**
-
   - Monthly 1-on-1s
-
     - Priorities, Passions, Performance
-
   - Bi-Annual Checkpoints
-
     - Goal Progress Review
-
   - Annual 360 Feedback
-
     - Peer Reviews
     - Career Plan Assessment
     - Salary / Progression
-
-  - Radar / Spider Chart Visualization
-
-    - _Technical Skills_: Code Quality, Problem-Solving, Testing
-    - _Dependability_: Time Management, Proactivity, Consistency
-    - _Leadership_: Collaboration, Communication, Ownership
-
+  - **Radar / Spider Chart Visualization**
+    - *Technical Skills*: Code Quality, Problem-Solving, Testing
+    - *Dependability*: Time Management, Proactivity, Consistency
+    - *Leadership*: Collaboration, Communication, Ownership
 - **Shadowing (Mentorship)**
-
-  - _Review Shadowing_: Live walkthroughs of PR feedback
-  - _Architectural Shadowing_: Narrated design/problem-solving
-  - _Support Shadowing_: Breaking isolation on complex tickets
+  - *Review Shadowing*: Live walkthroughs of PR feedback
+  - *Architectural Shadowing*: Narrated design/problem-solving
+  - *Support Shadowing*: Breaking isolation on complex tickets
 
 ### Recognition & Motivation
-
 - **Motivation**
-
   - Quarterly Innovation Day (Dedicated R&D / PoCs)
-
 - **Recognition**
-
   - Engineer of the Quarter (Peer-nominated)
-  - Quartertly titles (based on Swarmia)
-
-    - _The Ghostbuster_: Top tech-debt contributor
-    - _The Shield_: Top stability & bugfix contributor
-    - _The Bridge Builder_: Top support & peer reviews
+  - **Quarterly titles (based on Swarmia)**
+    - *The Ghostbuster*: Top tech-debt contributor
+    - *The Shield*: Top stability & bugfix contributor
+    - *The Bridge Builder*: Top support & peer reviews
 
 ## Way of Working / Organization
 
 ### Quantitative improvement
-
 - **Standardization**
-
   - Standardized Tagging: `tech-debt`, `stability`, `bugfix`, `support`
-
 - **Analysis**
-
   - Data collection and monitoring via Swarmia
-
 - **Optimization**
-
   - Process adjustment based on metric analysis
 
 ### Operational Governance
-
 - **Focus Protection**
-
   - Support Rotation
   - On-Call Rotation (office hours)
-
 - **Onboarding Process**
-
-  - Buddy System (Go-to person for new joiners)
-
+  - **Buddy System (Go-to person for new joiners)**
     - Access management & tooling setup
     - Cross-team ramp-up sessions (Domain & Networking)
     - General guidance & "safe space" for questions
-
-  - Probation check-in
-
+  - **Probation check-in**
     - Assess up-to-speed status
-    - Verifiy happiness & fit
+    - Verify happiness & fit
+- **On-call**
+  - Cross-domain shadowing
+  - Gradual team consolidation
 
 ## Tech
 
 ### Operational Excellence
-
 - **Stability**
 - **Recurring Issue Remediation**: Action plans for permanent/temporary fixes
 - **Critical Flow Hardening**: Login & Registration improvement investigation + action plan
 
 ### Modernization
-
 - **Knowledge Risk Mitigation**
-
-  - Tech
-
-    - NSB, MSMQ
-    - WCF
-
-  - Domain
-    
-    - Mapping out blind spots
-    -  
-
+  - *Tech*: NSB, MSMQ, WCF
+  - *Domain*: Identifying our blind spots
 - **Rationalization**
+  - *Complexity Reduction*: Consolidating deployables, streamlining flows
+  - *Efficiency*: Cost reduction (.NET updates, resource usage, storage usage)
 
-  - Complexity Reduction
-
-    - Consolidating deployables
-    - Streamlining flows for better maintenance
-
-  - Efficiency
-
-    - Cost reduction
-
-      - .NET updates
-      - Adjusting resource usage
-
-    - Review storage usage
+### AI
+- **Shared Prompts**
+  - Pre-reviewer for common pitfalls, code smells, and architectural standards
+  - Refactoring Assistant: Interface extraction & Service Layer migration strategies
+- **Upgrade & Support Automation**
+  - .NET Upgrade Assistant
+  - Support request triaging & automated fix suggestions (Draft PRs)
+- **Fluid Flow** 
