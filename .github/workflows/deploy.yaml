@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate Markmap
-        run: npx markmap-cli mindmap.md -o index.html
+        run: npx markmap-cli markmap.md -o index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
