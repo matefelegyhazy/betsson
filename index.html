@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>((r) => {
+          setTimeout(r);
+        })(() => {
+  const { markmap, mm } = window;
+  const toolbar = new markmap.Toolbar();
+  toolbar.attach(mm);
+  const el = toolbar.render();
+  el.setAttribute("style", "position:absolute;bottom:20px;right:20px");
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"PAM Strategy","children":[{"content":"Culture and Career","children":[{"content":"Engagement","children":[{"content":"\n<p data-lines=\"6,7\"><strong>Quarterly Team Building</strong></p>","children":[{"content":"Creative (Escape room, Guided painting)","children":[],"payload":{"tag":"li","lines":"8,9"}},{"content":"Purpose (Facilitated Games, CSR / Volunteering)","children":[],"payload":{"tag":"li","lines":"9,11"}}],"payload":{"tag":"li","lines":"6,11"}},{"content":"\n<p data-lines=\"11,12\"><strong>Watch Parties</strong> (.NET Conf, MS Build, NDC)</p>","children":[],"payload":{"tag":"li","lines":"11,13"}}],"payload":{"tag":"h3","lines":"4,5"}},{"content":"Growth","children":[{"content":"\n<p data-lines=\"15,16\"><strong>Feedback</strong></p>","children":[{"content":"\n<p data-lines=\"17,18\">Monthly 1-on-1s</p>","children":[{"content":"Priorities, Passions, Performance","children":[],"payload":{"tag":"li","lines":"19,21"}}],"payload":{"tag":"li","lines":"17,21"}},{"content":"\n<p data-lines=\"21,22\">Bi-Annual Checkpoints</p>","children":[{"content":"Goal Progress Review","children":[],"payload":{"tag":"li","lines":"23,25"}}],"payload":{"tag":"li","lines":"21,25"}},{"content":"\n<p data-lines=\"25,26\">Annual 360 Feedback</p>","children":[{"content":"Peer Reviews","children":[],"payload":{"tag":"li","lines":"27,28"}},{"content":"Career Plan Assessment","children":[],"payload":{"tag":"li","lines":"28,29"}},{"content":"Salary / Progression","children":[],"payload":{"tag":"li","lines":"29,31"}}],"payload":{"tag":"li","lines":"25,31"}},{"content":"\n<p data-lines=\"31,32\">Radar / Spider Chart Visualization</p>","children":[{"content":"<em>Technical Skills</em>: Code Quality, Problem-Solving, Testing","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"<em>Dependability</em>: Time Management, Proactivity, Consistency","children":[],"payload":{"tag":"li","lines":"34,35"}},{"content":"<em>Leadership</em>: Collaboration, Communication, Ownership","children":[],"payload":{"tag":"li","lines":"35,37"}}],"payload":{"tag":"li","lines":"31,37"}}],"payload":{"tag":"li","lines":"15,37"}},{"content":"\n<p data-lines=\"37,38\"><strong>Shadowing (Mentorship)</strong></p>","children":[{"content":"<em>Review Shadowing</em>: Live walkthroughs of PR feedback","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"<em>Architectural Shadowing</em>: Narrated design/problem-solving","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"<em>Support Shadowing</em>: Breaking isolation on complex tickets","children":[],"payload":{"tag":"li","lines":"41,43"}}],"payload":{"tag":"li","lines":"37,43"}}],"payload":{"tag":"h3","lines":"13,14"}},{"content":"Recognition &amp; Motivation","children":[{"content":"\n<p data-lines=\"45,46\"><strong>Motivation</strong></p>","children":[{"content":"Quarterly Innovation Day (Dedicated R&amp;D / PoCs)","children":[],"payload":{"tag":"li","lines":"47,49"}}],"payload":{"tag":"li","lines":"45,49"}},{"content":"\n<p data-lines=\"49,50\"><strong>Recognition</strong></p>","children":[{"content":"\n<p data-lines=\"51,52\">Engineer of the Quarter (Peer-nominated)</p>","children":[],"payload":{"tag":"li","lines":"51,52"}},{"content":"\n<p data-lines=\"52,53\">Quartertly titles (based on Swarmia)</p>","children":[{"content":"<em>The Ghostbuster</em>: Top tech-debt contributor","children":[],"payload":{"tag":"li","lines":"54,55"}},{"content":"<em>The Shield</em>: Top stability &amp; bugfix contributor","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"<em>The Bridge Builder</em>: Top support &amp; peer reviews","children":[],"payload":{"tag":"li","lines":"56,58"}}],"payload":{"tag":"li","lines":"52,58"}}],"payload":{"tag":"li","lines":"49,58"}}],"payload":{"tag":"h3","lines":"43,44"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"Way of Working / Organization","children":[{"content":"Quantitative improvement","children":[{"content":"\n<p data-lines=\"62,63\"><strong>Standardization</strong></p>","children":[{"content":"Standardized Tagging: <code>tech-debt</code>, <code>stability</code>, <code>bugfix</code>, <code>support</code>","children":[],"payload":{"tag":"li","lines":"64,66"}}],"payload":{"tag":"li","lines":"62,66"}},{"content":"\n<p data-lines=\"66,67\"><strong>Analysis</strong></p>","children":[{"content":"Data collection and monitoring via Swarmia","children":[],"payload":{"tag":"li","lines":"68,70"}}],"payload":{"tag":"li","lines":"66,70"}},{"content":"\n<p data-lines=\"70,71\"><strong>Optimization</strong></p>","children":[{"content":"Process adjustment based on metric analysis","children":[],"payload":{"tag":"li","lines":"72,74"}}],"payload":{"tag":"li","lines":"70,74"}}],"payload":{"tag":"h3","lines":"60,61"}},{"content":"Operational Governance","children":[{"content":"\n<p data-lines=\"76,77\"><strong>Focus Protection</strong></p>","children":[{"content":"Support Rotation","children":[],"payload":{"tag":"li","lines":"78,79"}},{"content":"On-Call Rotation (office hours)","children":[],"payload":{"tag":"li","lines":"79,81"}}],"payload":{"tag":"li","lines":"76,81"}},{"content":"\n<p data-lines=\"81,82\"><strong>Onboarding Process</strong></p>","children":[{"content":"\n<p data-lines=\"83,84\">Buddy System (Go-to person for new joiners)</p>","children":[{"content":"Access management &amp; tooling setup","children":[],"payload":{"tag":"li","lines":"85,86"}},{"content":"Cross-team ramp-up sessions (Domain &amp; Networking)","children":[],"payload":{"tag":"li","lines":"86,87"}},{"content":"General guidance &amp; &quot;safe space&quot; for questions","children":[],"payload":{"tag":"li","lines":"87,89"}}],"payload":{"tag":"li","lines":"83,89"}},{"content":"\n<p data-lines=\"89,90\">Probation check-in</p>","children":[{"content":"Assess up-to-speed status","children":[],"payload":{"tag":"li","lines":"91,92"}},{"content":"Verifiy happiness &amp; fit","children":[],"payload":{"tag":"li","lines":"92,94"}}],"payload":{"tag":"li","lines":"89,94"}}],"payload":{"tag":"li","lines":"81,94"}}],"payload":{"tag":"h3","lines":"74,75"}}],"payload":{"tag":"h2","lines":"58,59"}},{"content":"Tech","children":[{"content":"Operational Excellence","children":[{"content":"<strong>Stability</strong>","children":[],"payload":{"tag":"li","lines":"98,99"}},{"content":"<strong>Recurring Issue Remediation</strong>: Action plans for permanent/temporary fixes","children":[],"payload":{"tag":"li","lines":"99,100"}},{"content":"<strong>Critical Flow Hardening</strong>: Login &amp; Registration improvement investigation + action plan","children":[],"payload":{"tag":"li","lines":"100,102"}}],"payload":{"tag":"h3","lines":"96,97"}},{"content":"Modernization","children":[{"content":"\n<p data-lines=\"104,105\"><strong>Knowledge Risk Mitigation</strong></p>","children":[{"content":"\n<p data-lines=\"106,107\">Tech</p>","children":[{"content":"NSB, MSMQ","children":[],"payload":{"tag":"li","lines":"108,109"}},{"content":"WCF","children":[],"payload":{"tag":"li","lines":"109,111"}}],"payload":{"tag":"li","lines":"106,111"}},{"content":"\n<p data-lines=\"111,112\">Domain</p>","children":[{"content":"Mapping out blind spots","children":[],"payload":{"tag":"li","lines":"113,114"}},{"content":"","children":[],"payload":{"tag":"li","lines":"114,116"}}],"payload":{"tag":"li","lines":"111,116"}}],"payload":{"tag":"li","lines":"104,116"}},{"content":"\n<p data-lines=\"116,117\"><strong>Rationalization</strong></p>","children":[{"content":"\n<p data-lines=\"118,119\">Complexity Reduction</p>","children":[{"content":"Consolidating deployables","children":[],"payload":{"tag":"li","lines":"120,121"}},{"content":"Streamlining flows for better maintenance","children":[],"payload":{"tag":"li","lines":"121,123"}}],"payload":{"tag":"li","lines":"118,123"}},{"content":"\n<p data-lines=\"123,124\">Efficiency</p>","children":[{"content":"\n<p data-lines=\"125,126\">Cost reduction</p>","children":[{"content":".NET updates","children":[],"payload":{"tag":"li","lines":"127,128"}},{"content":"Adjusting resource usage","children":[],"payload":{"tag":"li","lines":"128,130"}}],"payload":{"tag":"li","lines":"125,130"}},{"content":"\n<p data-lines=\"130,131\">Review storage usage</p>","children":[],"payload":{"tag":"li","lines":"130,131"}}],"payload":{"tag":"li","lines":"123,131"}}],"payload":{"tag":"li","lines":"116,131"}}],"payload":{"tag":"h3","lines":"102,103"}}],"payload":{"tag":"h2","lines":"94,95"}}],"payload":{"tag":"h1","lines":"0,1"}},null)</script>
+</body>
+</html>
