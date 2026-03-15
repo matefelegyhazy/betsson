@@ -1,20 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>PAM Strategy Markmap</title>
-  <!-- Use the prebuilt browser version of Markmap -->
-  <script src="https://cdn.jsdelivr.net/npm/markmap-view/dist/browser/index.min.js"></script>
-  <style>
-    html, body { margin: 0; padding: 0; height: 100%; width: 100%; }
-    body { display: flex; justify-content: center; align-items: center; }
-    svg { width: 100%; height: 100%; }
-  </style>
-</head>
-<body>
-  <svg id="mindmap"></svg>
-
-  <script>
 # PAM Strategy
 
 ## Culture and Career
@@ -146,6 +129,3 @@
       - Adjusting resource usage
 
     - Review storage usage
-  </script>
-</body>
-</html>
